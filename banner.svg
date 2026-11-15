@@ -1,0 +1,105 @@
+<svg width="850" height="240" viewBox="0 0 850 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    {/* Gradients */}
+    <linearGradient id="bgGradient" x1="0" y1="0" x2="850" y2="240" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stopColor="#14101F" />
+      <stop offset="50%" stopColor="#1E172E" />
+      <stop offset="100%" stopColor="#120E1C" />
+    </linearGradient>
+
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stopColor="#BB98E5" />
+      <stop offset="50%" stopColor="#E2BEF7" />
+      <stop offset="100%" stopColor="#FFA07A" />
+    </linearGradient>
+
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stopColor="#BB98E5" stopOpacity="0.6" />
+      <stop offset="50%" stopColor="#FFA07A" stopOpacity="0.4" />
+      <stop offset="100%" stopColor="#6EE7B7" stopOpacity="0.5" />
+    </linearGradient>
+
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  {/* Card Container */}
+  <rect width="850" height="240" rx="24" fill="url(#bgGradient)" stroke="url(#borderGrad)" stroke-width="2" />
+
+  {/* Subtle Background Grid */}
+  <g opacity="0.12" stroke="#BB98E5" stroke-width="1">
+    <path d="M0 40 H850 M0 80 H850 M0 120 H850 M0 160 H850 M0 200 H850" />
+    <path d="M85 0 V240 M170 0 V240 M255 0 V240 M340 0 V240 M425 0 V240 M510 0 V240 M595 0 V240 M680 0 V240 M765 0 V240" />
+  </g>
+
+  {/* Ambient Color Orbs */}
+  <circle cx="120" cy="80" r="90" fill="#BB98E5" opacity="0.15" filter="url(#glow)" />
+  <circle cx="720" cy="160" r="110" fill="#FFA07A" opacity="0.12" filter="url(#glow)" />
+
+  {/* Pixel Art Heart & Star Elements */}
+  <g transform="translate(60, 42)">
+    <rect x="2" y="3" width="4" height="1" fill="#FF8A5C" />
+    <rect x="10" y="3" width="4" height="1" fill="#FF8A5C" />
+    <rect x="1" y="4" width="6" height="4" fill="#FFA07A" />
+    <rect x="9" y="4" width="6" height="4" fill="#FFA07A" />
+    <rect x="2" y="8" width="12" height="2" fill="#FF8A5C" />
+    <rect x="3" y="10" width="10" height="2" fill="#BB98E5" />
+    <rect x="5" y="12" width="6" height="2" fill="#BB98E5" />
+    <rect x="7" y="14" width="2" height="1" fill="#A779E0" />
+    <rect x="3" y="5" width="2" height="2" fill="#FFFFFF" />
+  </g>
+
+  {/* Top Tag */}
+  <g transform="translate(90, 48)">
+    <rect x="0" y="0" width="170" height="24" rx="12" fill="#BB98E5" fill-opacity="0.15" stroke="#BB98E5" stroke-opacity="0.4" />
+    <text x="12" y="16" fill="#BB98E5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" letter-spacing="1.5">✦ SHIVANGI.DEV</text>
+  </g>
+
+  {/* Main Heading */}
+  <text x="60" y="112" fill="#FFFFFF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="34" font-weight="900" letter-spacing="-0.5">
+    SHIVANGI TRIPATHI
+  </text>
+
+  {/* Subtitle with Gradient */}
+  <text x="60" y="142" fill="url(#accentGrad)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="17" font-weight="700" letter-spacing="0.2">
+    Software Developer · Frontend Engineer · AI Video Pipelines
+  </text>
+
+  {/* Badges Bar */}
+  <g transform="translate(60, 172)">
+    {/* Badge 1: KahaniVerse */}
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="180" height="30" rx="15" fill="#FAF5FF" fill-opacity="0.08" stroke="#BB98E5" stroke-opacity="0.4" />
+      <text x="14" y="19" fill="#E2BEF7" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600">🚀 100K+ Views @kahaniverse329</text>
+    </g>
+
+    {/* Badge 2: Galgotias University */}
+    <g transform="translate(192, 0)">
+      <rect x="0" y="0" width="185" height="30" rx="15" fill="#FAF5FF" fill-opacity="0.08" stroke="#FFA07A" stroke-opacity="0.4" />
+      <text x="14" y="19" fill="#FFB08E" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600">🎓 Galgotias Univ · 7.8 CGPA</text>
+    </g>
+
+    {/* Badge 3: Cupid */}
+    <g transform="translate(389, 0)">
+      <rect x="0" y="0" width="160" height="30" rx="15" fill="#FAF5FF" fill-opacity="0.08" stroke="#6EE7B7" stroke-opacity="0.4" />
+      <text x="14" y="19" fill="#A7F3D0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600">💘 Cupid Campus App</text>
+    </g>
+
+    {/* Badge 4: Savvy Tech */}
+    <g transform="translate(561, 0)">
+      <rect x="0" y="0" width="150" height="30" rx="15" fill="#FAF5FF" fill-opacity="0.08" stroke="#BB98E5" stroke-opacity="0.4" />
+      <text x="14" y="19" fill="#E2BEF7" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600">💼 Ex-Savvy Tech Intern</text>
+    </g>
+  </g>
+
+  {/* Right Decorative Sparkle */}
+  <g transform="translate(775, 45)">
+    <polygon points="12,0 15,9 24,12 15,15 12,24 9,15 0,12 9,9" fill="#FFA07A" />
+    <circle cx="12" cy="12" r="3" fill="#FFFFFF" />
+  </g>
+  <g transform="translate(735, 95)">
+    <polygon points="8,0 10,6 16,8 10,10 8,16 6,10 0,8 6,6" fill="#BB98E5" opacity="0.8" />
+  </g>
+</svg>
